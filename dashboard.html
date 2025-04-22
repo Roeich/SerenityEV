@@ -15,7 +15,7 @@
     <!-- Sidebar Desktop Navigation -->
     <aside class="sidebar fixed top-0 left-0 h-full w-64 bg-gradient-to-br from-purple-900 to-blue-800 shadow-lg border-r border-blue-900 hidden xl:flex flex-col z-30">
         <div class="flex flex-col items-center py-4 mb-2">
-            <img src="https://serenityevrepair.com/images/logo-no-background.png" alt="SerenityEV Logo" class="w-20 h-20 mb-2 rounded-full shadow-lg">
+            <img src="assets/img/logo.jpg" alt="SerenityEV Logo" class="w-20 h-20 mb-2 rounded-full">
             <span class="gradient-text text-2xl font-bold tracking-wide">SerenityEV</span>
             <span class="text-xs uppercase tracking-wider opacity-70 mt-1">Tesla & EV Repair CRM</span>
         </div>
@@ -36,17 +36,29 @@
         </div>
     </aside>
 
-    <!-- Mobile Nav (show on small screens)-->
-    <nav class="mobile-nav fixed xl:hidden bottom-0 left-0 right-0 bg-gradient-to-r from-purple-900 to-blue-800 flex justify-evenly px-4 py-2 z-40 shadow-xl border-t border-blue-900">
+    <!-- Mobile Nav top (show on small screens)-->
+    <nav class="fixed xl:hidden top-0 left-0 right-0 bg-gradient-to-r from-purple-900 to-blue-800 flex justify-between px-3 py-2 z-40 shadow-xl border-t border-blue-900">
+      <div>
+        <img class="w-10 h-10 rounded-full" src="assets/img/logo.jpg" alt="SerenityEV Logo">
+      </div>
+      <div class="flex gap-3">
+        <a href="#" class="flex items-center px-2 py-2 w-10 justify-center rounded-lg haptic hover:bg-blue-800/40"><i class="fa-solid fa-user-gear"></i></a>
+        <a href="#" class="flex items-center px-2 py-2 w-10 justify-center rounded-lg haptic hover:bg-blue-800/40"><i class="fa-solid fa-gear"></i></a>
+        <a href="#" class="flex items-center px-2 py-2 w-10 justify-center rounded-lg haptic hover:bg-blue-800/40"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+      </div>
+    </nav>
+    <!-- Mobile Nav bottom (show on small screens)-->
+    <nav class="mobile-nav fixed xl:hidden bottom-0 left-0 right-0 bg-gradient-to-r from-purple-900 to-blue-800 flex justify-between px-3 py-2 z-40 shadow-xl border-t border-blue-900">
         <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white"><i class="fa-solid fa-gauge text-lg"></i><span class="text-xs mt-1">Dashboard</span></a>
         <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white"><i class="fa-solid fa-briefcase text-lg"></i><span class="text-xs mt-1">Jobs</span></a>
         <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white"><i class="fa-solid fa-users text-lg"></i><span class="text-xs mt-1">Clients</span></a>
+        <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white"><i class="fa-solid fa-file-invoice-dollar text-lg"></i> Est</a>
         <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white"><i class="fa-solid fa-calendar-days text-lg"></i><span class="text-xs mt-1">Cal</span></a>
         <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white"><i class="fa-solid fa-robot text-lg"></i><span class="text-xs mt-1">AI</span></a>
     </nav>
 
     <!-- Main Content -->
-    <main class="xl:ml-64 pb-16 sm:pb-16 xl:pb-3 p-1 sm:p-3 relative transition-all duration-300">
+    <main class="xl:ml-64 py-16 sm:py-16 xl:py-3 p-1 sm:p-3 relative transition-all duration-300">
       <div class="container px-3 mx-auto">
         <!-- Hero Panel -->
         <section class="glass flex flex-col sm:flex-row items-center sm:justify-between p-6 shadow-lg mt-4">
