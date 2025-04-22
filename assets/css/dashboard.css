@@ -1,15 +1,25 @@
 body {
+    background: -o-linear-gradient(315deg, #181C29 0%, #1F1147 35%, #272D4F 100%);
     background: linear-gradient(135deg, #181C29 0%, #1F1147 35%, #272D4F 100%);
 }
 
 .haptic:hover,
 .haptic:focus {
+    -webkit-transition: -webkit-transform 0.09s cubic-bezier(.4, 0, .2, 1);
+    transition: -webkit-transform 0.09s cubic-bezier(.4, 0, .2, 1);
+    -o-transition: transform 0.09s cubic-bezier(.4, 0, .2, 1);
     transition: transform 0.09s cubic-bezier(.4, 0, .2, 1);
-    transform: scale(1.045);
-    box-shadow: 0 2px 16px 0 rgba(56, 127, 255, 0.14), 0 4px 24px 0 rgba(128, 95, 255, 0.13);
+    transition: transform 0.09s cubic-bezier(.4, 0, .2, 1), -webkit-transform 0.09s cubic-bezier(.4, 0, .2, 1);
+    -webkit-transform: scale(1.045);
+        -ms-transform: scale(1.045);
+            transform: scale(1.045);
+    -webkit-box-shadow: 0 2px 16px 0 rgba(56, 127, 255, 0.14), 0 4px 24px 0 rgba(128, 95, 255, 0.13);
+            box-shadow: 0 2px 16px 0 rgba(56, 127, 255, 0.14), 0 4px 24px 0 rgba(128, 95, 255, 0.13);
 }
 
 .gradient-text {
+    background: -webkit-gradient(linear, left top, right top, from(#a084fa), color-stop(65%, #38b6ff));
+    background: -o-linear-gradient(left, #a084fa, #38b6ff 65%);
     background: linear-gradient(90deg, #a084fa, #38b6ff 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -17,19 +27,38 @@ body {
 
 .glass {
     background: rgba(30, 34, 57, 0.81);
-    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
     border-radius: 18px;
+}
+
+ ::-moz-selection {
+    background: #38b6ff33;
 }
 
  ::selection {
     background: #38b6ff33;
 }
+.hide_scrollbar::-webkit-scrollbar {
+    display: none;
+}
 
+.hide_scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
 @media (max-width: 768px) {
     .sidebar {
         display: none !important;
     }
     .mobile-nav {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
+    }
+}
+@media (min-width: 1280px){
+    .container{
+        max-width: 1160px;
     }
 }

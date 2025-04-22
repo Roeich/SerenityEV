@@ -22,29 +22,44 @@ body {
     overflow: hidden;
 }
 .highlight {
+    background: -webkit-gradient(linear, left top, right top, from(#5561ff), to(#ba2cfa));
+    background: -o-linear-gradient(left, #5561ff 0%, #ba2cfa 100%);
     background: linear-gradient(90deg, #5561ff 0%, #ba2cfa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .card-gradient {
+    background: -o-linear-gradient(330deg, #221c44 70%, #2b3e90 100%);
     background: linear-gradient(120deg, #221c44 70%, #2b3e90 100%);
 }
 .ios-glass {
     background: rgba(36, 33, 63, 0.72);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    backdrop-filter: blur(8px);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
 }
 
 .cta-button {
+    -webkit-transition: -webkit-transform .09s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .15s;
+    transition: -webkit-transform .09s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .15s;
+    -o-transition: transform .09s cubic-bezier(.4, 0, .2, 1), box-shadow .15s;
     transition: transform .09s cubic-bezier(.4, 0, .2, 1), box-shadow .15s;
-    box-shadow: 0 2px 20px 4px rgba(71, 105, 255, 0.09);
+    transition: transform .09s cubic-bezier(.4, 0, .2, 1), box-shadow .15s, -webkit-transform .09s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .15s;
+    -webkit-box-shadow: 0 2px 20px 4px rgba(71, 105, 255, 0.09);
+            box-shadow: 0 2px 20px 4px rgba(71, 105, 255, 0.09);
 }
 
 .cta-button:hover {
-    transform: scale(1.045) translateY(-1px);
-    box-shadow: 0 6px 25px 4px rgba(186, 44, 250, 0.12);
+    -webkit-transform: scale(1.045) translateY(-1px);
+        -ms-transform: scale(1.045) translateY(-1px);
+            transform: scale(1.045) translateY(-1px);
+    -webkit-box-shadow: 0 6px 25px 4px rgba(186, 44, 250, 0.12);
+            box-shadow: 0 6px 25px 4px rgba(186, 44, 250, 0.12);
 }
 .footer{
+    background: -webkit-gradient(linear, left top, right top, from(#20254b), color-stop(#221c44) , to(#2a3277));
+    background: -o-linear-gradient(left, #20254b, #221c44 , #2a3277);
     background: linear-gradient(to right, #20254b, #221c44 , #2a3277);
 }
 
@@ -52,13 +67,26 @@ body {
 
 .fade-in-up {
     opacity: 0;
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transition: opacity 0.8s cubic-bezier(.4, 0, .2, 1), -webkit-transform 0.8s cubic-bezier(.4, 0, .2, 1);
+    transition: opacity 0.8s cubic-bezier(.4, 0, .2, 1), -webkit-transform 0.8s cubic-bezier(.4, 0, .2, 1);
+    -o-transition: opacity 0.8s cubic-bezier(.4, 0, .2, 1), transform 0.8s cubic-bezier(.4, 0, .2, 1);
     transition: opacity 0.8s cubic-bezier(.4, 0, .2, 1), transform 0.8s cubic-bezier(.4, 0, .2, 1);
+    transition: opacity 0.8s cubic-bezier(.4, 0, .2, 1), transform 0.8s cubic-bezier(.4, 0, .2, 1), -webkit-transform 0.8s cubic-bezier(.4, 0, .2, 1);
 }
 
 .fade-in-up.visible {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+}
+
+ ::-moz-selection {
+    background-color: #3d2960;
+    color: #fff;
 }
 
  ::selection {
