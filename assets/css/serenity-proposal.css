@@ -1,0 +1,95 @@
+body {
+    font-family: 'InterVariable', 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, #18191A 60%, #232526 100%);
+    color: #ECECEC;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.gold-gradient {
+    background: linear-gradient(90deg, #cfae62, #fff5c2, #baa645 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header-bar {
+    backdrop-filter: blur(8px);
+    background: linear-gradient(to right, rgba(28, 26, 23, .94) 80%, rgba(191, 155, 60, .14));
+    border-bottom: 1px solid #222;
+}
+
+.section-title {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-size: 1.55rem;
+    padding-bottom: 0.25em;
+    margin-bottom: .5em;
+    border-bottom: 2px solid #82725533;
+    background: linear-gradient(90deg, #BAA645 0, #84701e 48%, #cfae62 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.gradient-tesla {
+    background: linear-gradient(90deg, #080909 10%, #232526 50%, #101820 95%);
+    border-radius: 1rem;
+}
+
+.proposal-bg {
+    background: linear-gradient(120deg, rgba(42, 40, 35, .99) 70%, rgba(191, 155, 60, .08)), url();
+    border-radius: 1.628rem;
+    box-shadow: 0 8px 44px rgba(45, 36, 17, .15), 0 2px 24px rgba(190, 146, 7, .08);
+}
+
+.subtle-gold {
+    color: #dac79e;
+    font-weight: 500;
+}
+
+.serenity-watermark {
+    position: absolute;
+    z-index: 0;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 7vw;
+    opacity: .04;
+    font-weight: 800;
+    letter-spacing: 0.35em;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #baa645 40%, #fff5c2 55%, #baa645 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.gold-bullet {
+    margin-right: 0.5em;
+    color: #cfae62;
+    font-size: .98em;
+}
+
+ ::selection {
+    background: #baa64533;
+}
+
+@media (max-width: 700px) {
+    .serenity-watermark {
+        font-size: 15vw;
+    }
+    .proposal-bg {
+        padding: 1.25em !important;
+    }
+    .section-title {
+        font-size: 1.2rem;
+    }
+}

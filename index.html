@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tesla.svg" />
+    <title>SerenityEV | Premium Tesla & EV Repair Specialists</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Area -->
+    <header class="header fixed top-0 left-0 w-full z-50 border-b border-blue-800">
+        <div class="container px-4 mx-auto">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="flex items-center space-x-3">
+                    <span class="text-yellow-400 text-2xl"><i class="fas fa-bolt"></i></span>
+                    <span class="text-white text-xl font-bold tracking-wider">SerenityEV</span>
+                </a>
+                <nav class="hidden space-x-8 text-md text-blue-100 font-semibold">
+                    <a href="#services" class="hover:text-purple-300">Services</a>
+                    <a href="#parts" class="hover:text-purple-300">Tesla Parts</a>
+                    <a href="#why" class="hover:text-purple-300">Why SerenityEV</a>
+                    <a href="#testimonials" class="hover:text-purple-300">Testimonials</a>
+                    <a href="#about" class="hover:text-purple-300">About</a>
+                    <a href="#contact" class="hover:text-purple-300">Contact</a>
+                </nav>
+
+                <nav class="header_menu">
+                    <div class="flex items-center justify-between lg:hidden mb-6">
+                        <a href="#home" class="flex items-center space-x-3">
+                            <span class="text-yellow-400 text-2xl"><i class="fas fa-bolt"></i></span>
+                            <span class="text-white text-xl font-bold tracking-wider">SerenityEV</span>
+                        </a>
+    
+                        <button class="p-2 rounded-lg bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition duration-300 w-10 toggle_menu" type="button">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-6">
+                        <a href="#services" class="hover:text-purple-300">Services</a>
+                        <a href="#parts" class="hover:text-purple-300">Tesla Parts</a>
+                        <a href="#why" class="hover:text-purple-300">Why SerenityEV</a>
+                        <a href="#testimonials" class="hover:text-purple-300">Testimonials</a>
+                        <a href="#about" class="hover:text-purple-300">About</a>
+                        <a href="#contact" class="hover:text-purple-300">Contact</a>
+                    </div>
+                </nav>
+
+                <div class="lg:hidden">
+                    <button class="p-2 rounded-lg bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition duration-300 w-10 toggle_menu" type="button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="backdrop" class="toggle_menu"></div>
+
+    <!-- Main Area -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="home" class="pt-28 lg:pt-32 pb-12 fade-in-up">
+            <div class="container px-4 mx-auto">
+                <div class="flex flex-col-reverse lg:flex-row items-center">
+                    <div class="w-full lg:w-1/2 lg:pr-6 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight"><span class="highlight">Arizona’s Premier</span> <br>Tesla & EV Repair Experts</h1>
+                        <p class="mb-7 text-lg text-blue-200 font-light">Luxury Tesla service powered by AI-driven workflow, certified EV specialists, and full transparency for your peace of mind. SerenityEV delivers the future of automotive repair—today.</p>
+                        <div class="flex flex-col md:flex-row gap-4 mb-7 justify-center md:justify-start">
+                            <a href="#contact" class="cta-button text-sm xl:text-base py-3 px-5 rounded-md bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 text-white font-bold shadow-md hover:scale-105 focus:outline-none text-md">Text Now for Free Estimate</a>
+                            <a href="#contact" class="cta-button text-sm xl:text-base py-3 px-5 rounded-md bg-gradient-to-r from-purple-800 via-blue-700 to-cyan-400 text-white font-bold shadow-md text-md">Book Appointment</a>
+                            <a href="#contact" class="cta-button text-sm xl:text-base py-3 px-5 rounded-md bg-gradient-to-r from-blue-400 via-purple-600 to-indigo-800 text-white font-bold shadow-md text-md">Check Vehicle Status</a>
+                        </div>
+                        <div class="flex space-x-3 items-center">
+                            <i class="fab fa-tesla text-3xl text-pink-400"></i>
+                            <i class="fab fa-react text-2xl text-blue-400"></i>
+                            <span class="text-blue-200 ml-1">Tesla, Rivian, and All Premium EVs</span>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 mb-6 lg:mb-0 flex items-center justify-center">
+                        <!-- Placeholder Tesla shop image -->
+                        <img src="https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=700&q=80" alt="Tesla Repair Shop" class="rounded-xl shadow-2xl border-4 border-blue-700 opacity-95 w-full md:max-w-full ios-glass" style="min-height:220px;object-fit:cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Services Section -->
+        <section id="services" class="w-full pt-20 pb-12 fade-in-up">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-white highlight">Our Services</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-7">
+                    <div class="card-gradient rounded-lg p-6 shadow-lg flex flex-col items-start h-full ios-glass">
+                        <span class="text-2xl text-blue-300 mb-3"><i class="fas fa-car-battery"></i></span>
+                        <h3 class="font-semibold text-xl mb-2">Tesla & EV Repairs</h3>
+                        <p class="text-blue-100 font-light">Advanced diagnostics, module replacements, battery swaps, drive units, brakes, software—factory certified.</p>
+                    </div>
+                    <div class="card-gradient rounded-lg p-6 shadow-lg flex flex-col items-start h-full ios-glass">
+                        <span class="text-2xl text-purple-300 mb-3"><i class="fas fa-bolt"></i></span>
+                        <h3 class="font-semibold text-xl mb-2">Electrical Diagnostics</h3>
+                        <p class="text-blue-100 font-light">High-voltage and electronic systems troubleshooting with state-of-the-art scanning tools and expertise.</p>
+                    </div>
+                    <div class="card-gradient rounded-lg p-6 shadow-lg flex flex-col items-start h-full ios-glass">
+                        <span class="text-2xl text-yellow-300 mb-3"><i class="fas fa-sync-alt"></i></span>
+                        <h3 class="font-semibold text-xl mb-2">Routine Maintenance</h3>
+                        <p class="text-blue-100 font-light">Factory-interval service, brake/AC/cooling inspection, tire rotations, software updates, and performance checks.</p>
+                    </div>
+                    <div class="card-gradient rounded-lg p-6 shadow-lg flex flex-col items-start h-full ios-glass">
+                        <span class="text-2xl text-pink-300 mb-3"><i class="fas fa-tools"></i></span>
+                        <h3 class="font-semibold text-xl mb-2">Performance Upgrades</h3>
+                        <p class="text-blue-100 font-light">MCU/hardware retrofits, performance software updates, brake and suspension upgrades for your next-gen EV.</p>
+                    </div>
+                    <div class="card-gradient rounded-lg p-6 shadow-lg flex flex-col items-start h-full ios-glass">
+                        <span class="text-2xl text-cyan-300 mb-3"><i class="fas fa-certificate"></i></span>
+                        <h3 class="font-semibold text-xl mb-2">Warranty & Recall Support</h3>
+                        <p class="text-blue-100 font-light">Navigate warranty claims, official recalls, and bulletins—our experts handle the paperwork so you don’t have to.</p>
+                    </div>
+                    <div class="card-gradient rounded-lg p-6 shadow-lg flex flex-col items-start h-full ios-glass">
+                        <span class="text-2xl text-blue-400 mb-3"><i class="fas fa-car"></i></span>
+                        <h3 class="font-semibold text-xl mb-2">Glass, Body, & Interior</h3>
+                        <p class="text-blue-100 font-light">OEM paint, glass, door handles, screens, HVAC, and interior repair—matching Tesla quality end-to-end.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Parts Inventory Section -->
+        <section id="parts" class="pt-20 pb-12 fade-in-up">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-7 text-white highlight">Tesla & EV Parts Inventory</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7">
+                    <div class="rounded-lg p-6 card-gradient shadow flex flex-col ios-glass">
+                        <span class="text-lg text-purple-200 flex items-center mb-2"><i class="fas fa-battery-full mr-2"></i> High-Voltage Batteries</span>
+                        <p class="text-blue-100 text-sm">OEM modules, packs, balancing, and swap/install. All current Tesla generations in stock or quick-sourcing.</p>
+                    </div>
+                    <div class="rounded-lg p-6 card-gradient shadow flex flex-col ios-glass">
+                        <span class="text-lg text-blue-200 flex items-center mb-2"><i class="fas fa-rocket mr-2"></i> Drive Units & Powertrain</span>
+                        <p class="text-blue-100 text-sm">Replacement motors, gearboxes, coolant lines—precision installation, warrantied labor and parts.</p>
+                    </div>
+                    <div class="rounded-lg p-6 card-gradient shadow flex flex-col ios-glass">
+                        <span class="text-lg text-pink-200 flex items-center mb-2"><i class="fas fa-toolbox mr-2"></i> Body & Interior Parts</span>
+                        <p class="text-blue-100 text-sm">Glass, screens, handles, trim, HVAC—direct-sourced from genuine suppliers for your peace of mind.</p>
+                    </div>
+                </div>
+                <p class="text-blue-200 mt-6 max-w-xl">Looking for something specific? We can source, quote, and overnight most Tesla-certified components.</p>
+            </div>
+        </section>
+    
+        <!-- Why Choose Us Section -->
+        <section id="why" class="pt-20 pb-12 fade-in-up">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-white highlight">Why Choose SerenityEV?</h2>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3 card-gradient rounded-lg p-5 shadow ios-glass mb-3 md:mb-0">
+                        <span class="text-xl text-yellow-300 mb-2"><i class="fas fa-user-shield"></i></span>
+                        <h4 class="font-semibold mb-1">Certified Tesla & EV Technicians</h4>
+                        <p class="text-blue-100 text-sm">40+ years combined experience, ex-Tesla and Rivian master techs. Obsessed with quality and innovation.</p>
+                    </div>
+                    <div class="md:w-1/3 card-gradient rounded-lg p-5 shadow ios-glass mb-3 md:mb-0">
+                        <span class="text-xl text-pink-300 mb-2"><i class="fas fa-comments"></i></span>
+                        <h4 class="font-semibold mb-1">Transparent Communication</h4>
+                        <p class="text-blue-100 text-sm">Track repair status in real-time, get instant SMS updates, and always know what’s next with clear estimates.</p>
+                    </div>
+                    <div class="md:w-1/3 card-gradient rounded-lg p-5 shadow ios-glass">
+                        <span class="text-xl text-cyan-300 mb-2"><i class="fas fa-robot"></i></span>
+                        <h4 class="font-semibold mb-1">AI-Powered Efficiency</h4>
+                        <p class="text-blue-100 text-sm">Automated scheduling, reminders, and payment links mean more up-time, less waiting, every visit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="pt-20 pb-12 fade-in-up">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-9 text-white highlight">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="rounded-lg ios-glass card-gradient shadow p-6">
+                        <p class="italic text-blue-100 text-base">“Hands down the best Tesla service team in Arizona. Communication was next-level. I always knew what was happening with my Model 3!”</p>
+                        <span class="block text-right mt-3 text-blue-300 font-semibold">– Jessica M.</span>
+                    </div>
+                    <div class="rounded-lg ios-glass card-gradient shadow p-6">
+                        <p class="italic text-blue-100 text-base">“They sourced a replacement battery faster than Tesla itself. Super-clear pricing. Booking was easy and the AI updates were awesome.”</p>
+                        <span class="block text-right mt-3 text-blue-300 font-semibold">– Samir B.</span>
+                    </div>
+                    <div class="rounded-lg ios-glass card-gradient shadow p-6">
+                        <p class="italic text-blue-100 text-base">“You won’t find a better team for EV upgrades. My Model Y has never performed better. Highly recommend SerenityEV!”</p>
+                        <span class="block text-right mt-3 text-blue-300 font-semibold">– Erin L.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- About Us Section -->
+        <section id="about" class="pt-20 pb-12 fade-in-up">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-white highlight">About SerenityEV</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:items-center">
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2 text-blue-100">Our Story & Vision</h4>
+                        <p class="text-blue-200 mb-4 font-light">SerenityEV was founded by ex-Tesla and Rivian Master Technicians with a mission: set a new benchmark for premium electric vehicle service, combining next-gen automotive technology with luxury customer experience. We leverage decades
+                            of experience, state-of-the-art diagnostics, and an AI-powered workflow to deliver flawless EV repair, transparent updates, and total peace of mind.</p>
+                        <ul class="text-blue-100 font-light text-sm mb-3 list-disc ml-5">
+                            <li>40+ Years Experience</li>
+                            <li>1k+ Tesla & EVs Served</li>
+                            <li>100% Tesla & EV Focused</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- Placeholder Tesla shop image -->
+                        <img src="https://images.unsplash.com/photo-1549921296-a010eeb15b8c?auto=format&fit=crop&w=600&q=80" alt="About SerenityEV Tesla Shop" class="rounded-xl shadow-lg border-4 border-blue-700 ios-glass w-full object-cover" style="min-height:200px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="pt-20 pb-12 fade-in-up">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-7 text-white highlight">Contact SerenityEV</h2>
+                <p class="mb-5 text-blue-200">Ready for a quote, appointment, or to check your vehicle status? Contact us now—our EV specialists are standing by.</p>
+                <div class="flex flex-col items-center space-y-3 mb-7">
+                    <a href="tel:4805550000" class="cta-button inline-block px-6 py-3 rounded-md bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 text-white font-bold shadow-md">Call (480) 555-0000</a>
+                    <a href="mailto:info@serenityev.com" class="cta-button inline-block px-6 py-3 rounded-md bg-gradient-to-r from-purple-700 via-blue-700 to-cyan-700 text-white font-bold shadow-md">Email info@serenityev.com</a>
+                </div>
+                <form class="w-full mt-6 mx-auto max-w-xl bg-transparent">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4">
+                        <input type="text" placeholder="Full Name" class="bg-gray-900 bg-opacity-60 ios-glass text-white p-3 rounded-md outline-none border border-blue-800 focus:ring-2 focus:ring-blue-500 transition" required>
+                        <input type="email" placeholder="Email" class="bg-gray-900 bg-opacity-60 ios-glass text-white p-3 rounded-md outline-none border border-blue-800 focus:ring-2 focus:ring-blue-500 transition" required>
+                    </div>
+                    <textarea placeholder="How can we help you?" class="bg-gray-900 bg-opacity-60 ios-glass text-white p-3 rounded-md outline-none border border-blue-800 focus:ring-2 focus:ring-purple-400 w-full mb-4 transition" rows="4" required></textarea>
+                    <button type="submit" class="cta-button w-full py-3 rounded-md font-bold text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-600 shadow-md">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="footer py-6 text-center text-blue-200 mt-2">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div>
+                    <span class="font-semibold text-lg text-white">SerenityEV</span> &copy; 2025. All rights reserved.
+                </div>
+                <div class="flex space-x-5 mt-3 md:mt-0">
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:info@serenityev.com" class="hover:text-purple-300"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

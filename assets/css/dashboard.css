@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(135deg, #181C29 0%, #1F1147 35%, #272D4F 100%);
+}
+
+.haptic:hover,
+.haptic:focus {
+    transition: transform 0.09s cubic-bezier(.4, 0, .2, 1);
+    transform: scale(1.045);
+    box-shadow: 0 2px 16px 0 rgba(56, 127, 255, 0.14), 0 4px 24px 0 rgba(128, 95, 255, 0.13);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #a084fa, #38b6ff 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass {
+    background: rgba(30, 34, 57, 0.81);
+    backdrop-filter: blur(7px);
+    border-radius: 18px;
+}
+
+ ::selection {
+    background: #38b6ff33;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none !important;
+    }
+    .mobile-nav {
+        display: flex !important;
+    }
+}
